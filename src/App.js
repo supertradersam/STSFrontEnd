@@ -20,6 +20,7 @@ const App = () => {
     fetchTransactions();
   };
 
+
   const fetchTransactions = async () => {
     const response = await axios.get('https://stsbackend.onrender.com/api/transactions');
     setTransactions(response.data);
@@ -31,7 +32,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Expense Tracker</h1>
+      <h1>My Expense Tracker</h1>
       <div>
         <input
           type="number"
