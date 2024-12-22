@@ -13,7 +13,7 @@ const App = () => {
   const [transactions, setTransactions] = useState({});
 
   const saveTransaction = async () => {
-    await axios.post('https://your-backend-url.onrender.com/api/save', {
+    await axios.post('https://https://stsbackend.onrender.com/api/save', {
       date: date.toISOString().split('T')[0],
       amount,
     });
@@ -21,7 +21,7 @@ const App = () => {
   };
 
   const fetchTransactions = async () => {
-    const response = await axios.get('https://your-backend-url.onrender.com/api/transactions');
+    const response = await axios.get('https://https://stsbackend.onrender.com/api/transactions');
     setTransactions(response.data);
   };
 
